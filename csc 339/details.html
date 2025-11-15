@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CSC 339</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Personal Information</h1>
+        <form>
+          <div>
+            <label for="first-name">Firstname:</label>
+            <input type="text" id="first-name" name="first-name" />
+          </div>
+          <div>
+            <label for="last-name">Lastname:</label>
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+          <div>
+            <label>Department:</label>
+            <select>
+              <option value="computer science">Computer science</option>
+              <option value="information systems">Information systems</option>
+              <option value="information technology">Information technology</option> 
+              <option value="information communication technology">Information communication technology</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="data science">Data science</option>
+              <option value="software enginnering">Software engineering</option>          
+            </select>
+          </div>
+          <div>
+            <label>Assignment:</label>
+            <textarea name="assignment"></textarea>
+          </div>
+          <div>
+            <label>Upload your course form: </label>
+            <input type="file" accept="image/*,.pdf"/>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h1>Image switch</h1>
+        <p>This images switch when you hover on them</p>
+        <figure>
+          <img src="images/sunrise.jpeg" alt="sunrise">
+          <figcaption>Beautiful sunrise</figcaption>
+        </figure>
+        <figure>
+          <img src="images/sunset.jpeg" alt="sunset">
+          <figcaption>Beautiful sunset</figcaption>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>
