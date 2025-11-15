@@ -3,7 +3,7 @@
 My web development learning journey: building practical projects with HTML, CSS, JavaScript
 
 Projects
-1. CSC 339 - Student Login & Information System
+1. CSC 339 - [Student Login & Information System](./csc 339/)
 A web-based student information collection system with login validation.
 Technologies: HTML, CSS, JavaScript
 Status: In Progress
