@@ -3,20 +3,56 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #dfe9ec;
+}
+
+main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 #main-sect {
-    border: 1px solid #cc0f0f;
+    border: 1px none #cc0f0f;
     border-radius: 5px;
     padding: 40px;
-    margin: 100px;
+    margin: 50px;
     background-color: #fff;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 1px none #af1212;
+    padding: 20px ;
+    
 }
 
 
 .form-group {
     margin-bottom: 15px;
+    width: 100% ;
+    border: 1px none #af1212;
+    padding-left: 50px;
+
+}
+
+form input,
+select,
+textarea {
+    width: 80%;
+    border-radius: 4px;
+    height: 30px;
+    /*margin-left: 10px;*/
 }
 
 #file-upload label {
@@ -28,25 +64,77 @@ body {
 #file-upload input {
     margin-top: 10px;
     display: block;
+    width: 80%;
+    
+}
+
+
+
+/* Submit button styling */
+#submit-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#submit-btn input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #28a745 0%, #218838 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+#submit-btn input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+#submit-btn input[type="submit"]:active {
+    transform: translateY(0);
+    color: black;
+}
+
+#submit-btn input[type="submit"]:focus {
+    outline: 3px solid rgba(33, 136, 56, 0.18);
+    outline-offset: 2px;
+}
+
+#submit-btn input[type="submit"][disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 #image-switch {
     margin: 50px;
-    padding: 20px;
-    border: 1px solid #cc0f0f;
+    /*padding: 20px;*/
+    border: 1px none #cc0f0f;
     border-radius: 5px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Image swap: single visible image, other slides in on hover */
 .img-swap {
     position: relative;
-    width: 360px;
+    width: 80%;
     height: 220px;
     overflow: hidden;
     margin: 20px 0;
     border-radius: 6px;
-    border: 1px solid #af1212;
+    border: 1px none #af1212;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .img-swap img {
@@ -109,3 +197,4 @@ body {
     opacity: 1;
     z-index: 3;
 }
+
