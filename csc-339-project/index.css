@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dfe9ec;
+    display: flex;
+}
+
+#main-sect {
+    border: 1px solid #cc0f0f;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 100px;
+    background-color: #fff;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#file-upload label {
+    margin: 20px, 0, 10px, 0;
+    display: block;
+
+}
+
+#file-upload input {
+    margin-top: 10px;
+    display: block;
+}
+
+#image-switch {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid #cc0f0f;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Image swap: single visible image, other slides in on hover */
+.img-swap {
+    position: relative;
+    width: 360px;
+    height: 220px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 6px;
+    border: 1px solid #af1212;
+}
+
+.img-swap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.img-swap img.top {
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.img-swap img.bottom {
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.img-swap:hover img.top {
+    transform: translateX(100%);
+}
+
+.img-swap:hover img.bottom {
+    transform: translateX(0);
+}
+
+.img-swap figcaption {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.img-swap .caption-top {
+    transform: translateX(0);
+    z-index: 3;
+}
+
+.img-swap .caption-bottom {
+    transform: translateX(100%);
+    z-index: 0;
+}
+
+.img-swap:hover .caption-top {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.img-swap:hover .caption-bottom {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 3;
+}

@@ -4,54 +4,67 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>CSC 339</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <main>
-      <section>
+      <section id="main-sect">
         <h1>Personal Information</h1>
         <form>
-          <div>
+          <div class="form-group">
             <label for="first-name">Firstname:</label>
-            <input type="text" id="first-name" name="first-name" />
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Adekunle"
+            />
           </div>
-          <div>
+          <div class="form-group">
             <label for="last-name">Lastname:</label>
-            <input type="text" id="last-name" name="last-name" />
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Oreoluwa"
+            />
           </div>
-          <div>
+          <div class="form-group">
             <label>Department:</label>
             <select>
               <option value="computer science">Computer science</option>
               <option value="information systems">Information systems</option>
-              <option value="information technology">Information technology</option> 
-              <option value="information communication technology">Information communication technology</option>
+              <option value="information technology">
+                Information technology
+              </option>
+              <option value="information communication technology">
+                Information communication technology
+              </option>
               <option value="cybersecurity">Cybersecurity</option>
               <option value="data science">Data science</option>
-              <option value="software enginnering">Software engineering</option>          
+              <option value="software enginnering">Software engineering</option>
             </select>
           </div>
-          <div>
+          <div class="form-group">
             <label>Assignment:</label>
             <textarea name="assignment"></textarea>
           </div>
-          <div>
+          <div class="form-group" id="file-upload">
             <label>Upload your course form: </label>
-            <input type="file" accept="image/*,.pdf"/>
+            <input type="file" accept="image/*,.pdf" />
           </div>
         </form>
       </section>
-      <section>
+      <section id="image-switch">
         <h1>Image switch</h1>
         <p>This images switch when you hover on them</p>
-        <figure>
-          <img src="images/sunrise.jpeg" alt="sunrise">
-          <figcaption>Beautiful sunrise</figcaption>
-        </figure>
-        <figure>
-          <img src="images/sunset.jpeg" alt="sunset">
-          <figcaption>Beautiful sunset</figcaption>
+        <figure class="img-swap">
+          <img src="images/sunrise.jpeg" alt="sunrise" class="top" />
+          <img src="images/sunset.jpeg" alt="sunset" class="bottom" />
+          <figcaption class="caption-top">Beautiful sunrise</figcaption>
+          <figcaption class="caption-bottom">Beautiful sunset</figcaption>
         </figure>
       </section>
     </main>
-  </body>
+     </body>
 </html>

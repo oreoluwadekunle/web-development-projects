@@ -13,13 +13,12 @@ Built as part of my web development coursework to practice form handling, valida
 ## Features
 
 ### Current Features
-- ✅ Login form with username and password fields
-- ✅ Basic HTML structure
+- ✅ Login form with username and password fields ( Basic HTML structure)
+- ✅ Student information collection form styled with CSS
 
 ### In Progress
 - 🔄 CSS styling for modern, responsive design
 - 🔄 JavaScript form validation
-- 🔄 Student information collection form
 - 🔄 Data validation and error handling
 
 ### Planned Features
